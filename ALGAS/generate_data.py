@@ -36,5 +36,5 @@ def generate_data(sort: bool = False) -> list:
 
     if sort:
         dados = sorted(dados, key=lambda x: x[0])
-    
-    return dados
+
+    return dados 
