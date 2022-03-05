@@ -33,6 +33,8 @@ def main():
         print(f"{db_options.INSERT_DATA}* - Insert data to DB")
         print(f"{db_options.DELETE_DATA}* - Delete DB")
         print(f"{db_options.DROP_TABLE}* - Drop Table DB")
+        print(f"{db_options.EXPORT_CSV}* - Export data to CSV")
+        print(f"{db_options.EXPORT_JSON}* - Export data to JSON")
         print(f"{db_options.QUIT}* - Quit")
 
         inp = int(input("$: "))
@@ -65,6 +67,14 @@ def main():
         elif inp == db_options.DROP_TABLE:
             db.drop()
             print("\nDropped Table!\n")
+        elif inp == db_options.EXPORT_CSV:
+            dados = db.select()
+            db.export_csv(dados)
+            print("\nExported Data Successfully!\n")
+        elif inp == db_options.EXPORT_JSON:
+            dados = db.select()
+            db.export_json(dados)
+            print("\nExported Data Successfully!\n")
         elif inp == db_options.QUIT:
             running = False
             print("\nBye!\n")

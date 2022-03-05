@@ -1,0 +1,422 @@
+[
+    {
+        "id": 1301,
+        "valor": 100000,
+        "espacoMemoria": 28,
+        "tempoExecucao": 7499
+    },
+    {
+        "id": 1302,
+        "valor": 200000,
+        "espacoMemoria": 56,
+        "tempoExecucao": 14134
+    },
+    {
+        "id": 1303,
+        "valor": 300000,
+        "espacoMemoria": 84,
+        "tempoExecucao": 20796
+    },
+    {
+        "id": 1304,
+        "valor": 400000,
+        "espacoMemoria": 112,
+        "tempoExecucao": 27436
+    },
+    {
+        "id": 1305,
+        "valor": 500000,
+        "espacoMemoria": 140,
+        "tempoExecucao": 34351
+    },
+    {
+        "id": 1306,
+        "valor": 1000,
+        "espacoMemoria": 168,
+        "tempoExecucao": 58
+    },
+    {
+        "id": 1307,
+        "valor": 1100,
+        "espacoMemoria": 196,
+        "tempoExecucao": 85
+    },
+    {
+        "id": 1308,
+        "valor": 1200,
+        "espacoMemoria": 224,
+        "tempoExecucao": 88
+    },
+    {
+        "id": 1309,
+        "valor": 1300,
+        "espacoMemoria": 252,
+        "tempoExecucao": 102
+    },
+    {
+        "id": 1310,
+        "valor": 1400,
+        "espacoMemoria": 280,
+        "tempoExecucao": 104
+    },
+    {
+        "id": 1311,
+        "valor": 1500,
+        "espacoMemoria": 308,
+        "tempoExecucao": 163
+    },
+    {
+        "id": 1312,
+        "valor": 1600,
+        "espacoMemoria": 336,
+        "tempoExecucao": 128
+    },
+    {
+        "id": 1313,
+        "valor": 1700,
+        "espacoMemoria": 364,
+        "tempoExecucao": 129
+    },
+    {
+        "id": 1314,
+        "valor": 1800,
+        "espacoMemoria": 392,
+        "tempoExecucao": 118
+    },
+    {
+        "id": 1315,
+        "valor": 1900,
+        "espacoMemoria": 420,
+        "tempoExecucao": 123
+    },
+    {
+        "id": 1316,
+        "valor": 2000,
+        "espacoMemoria": 448,
+        "tempoExecucao": 131
+    },
+    {
+        "id": 1317,
+        "valor": 2100,
+        "espacoMemoria": 476,
+        "tempoExecucao": 133
+    },
+    {
+        "id": 1318,
+        "valor": 2200,
+        "espacoMemoria": 504,
+        "tempoExecucao": 138
+    },
+    {
+        "id": 1319,
+        "valor": 2300,
+        "espacoMemoria": 532,
+        "tempoExecucao": 145
+    },
+    {
+        "id": 1320,
+        "valor": 2400,
+        "espacoMemoria": 560,
+        "tempoExecucao": 151
+    },
+    {
+        "id": 1321,
+        "valor": 2500,
+        "espacoMemoria": 588,
+        "tempoExecucao": 155
+    },
+    {
+        "id": 1322,
+        "valor": 2600,
+        "espacoMemoria": 616,
+        "tempoExecucao": 161
+    },
+    {
+        "id": 1323,
+        "valor": 2700,
+        "espacoMemoria": 644,
+        "tempoExecucao": 167
+    },
+    {
+        "id": 1324,
+        "valor": 2800,
+        "espacoMemoria": 672,
+        "tempoExecucao": 173
+    },
+    {
+        "id": 1325,
+        "valor": 2900,
+        "espacoMemoria": 700,
+        "tempoExecucao": 178
+    },
+    {
+        "id": 1326,
+        "valor": 3000,
+        "espacoMemoria": 728,
+        "tempoExecucao": 183
+    },
+    {
+        "id": 1327,
+        "valor": 3100,
+        "espacoMemoria": 756,
+        "tempoExecucao": 192
+    },
+    {
+        "id": 1328,
+        "valor": 3200,
+        "espacoMemoria": 784,
+        "tempoExecucao": 204
+    },
+    {
+        "id": 1329,
+        "valor": 3300,
+        "espacoMemoria": 812,
+        "tempoExecucao": 201
+    },
+    {
+        "id": 1330,
+        "valor": 3400,
+        "espacoMemoria": 840,
+        "tempoExecucao": 206
+    },
+    {
+        "id": 1331,
+        "valor": 3500,
+        "espacoMemoria": 868,
+        "tempoExecucao": 213
+    },
+    {
+        "id": 1332,
+        "valor": 3600,
+        "espacoMemoria": 896,
+        "tempoExecucao": 218
+    },
+    {
+        "id": 1333,
+        "valor": 3700,
+        "espacoMemoria": 924,
+        "tempoExecucao": 223
+    },
+    {
+        "id": 1334,
+        "valor": 3800,
+        "espacoMemoria": 952,
+        "tempoExecucao": 228
+    },
+    {
+        "id": 1335,
+        "valor": 3900,
+        "espacoMemoria": 980,
+        "tempoExecucao": 235
+    },
+    {
+        "id": 1336,
+        "valor": 4000,
+        "espacoMemoria": 1008,
+        "tempoExecucao": 247
+    },
+    {
+        "id": 1337,
+        "valor": 4100,
+        "espacoMemoria": 1036,
+        "tempoExecucao": 246
+    },
+    {
+        "id": 1338,
+        "valor": 4200,
+        "espacoMemoria": 1064,
+        "tempoExecucao": 264
+    },
+    {
+        "id": 1339,
+        "valor": 4300,
+        "espacoMemoria": 1092,
+        "tempoExecucao": 281
+    },
+    {
+        "id": 1340,
+        "valor": 4400,
+        "espacoMemoria": 1120,
+        "tempoExecucao": 268
+    },
+    {
+        "id": 1341,
+        "valor": 4500,
+        "espacoMemoria": 1148,
+        "tempoExecucao": 270
+    },
+    {
+        "id": 1342,
+        "valor": 4600,
+        "espacoMemoria": 1176,
+        "tempoExecucao": 276
+    },
+    {
+        "id": 1343,
+        "valor": 4700,
+        "espacoMemoria": 1204,
+        "tempoExecucao": 280
+    },
+    {
+        "id": 1344,
+        "valor": 4800,
+        "espacoMemoria": 1232,
+        "tempoExecucao": 351
+    },
+    {
+        "id": 1345,
+        "valor": 4900,
+        "espacoMemoria": 1260,
+        "tempoExecucao": 293
+    },
+    {
+        "id": 1346,
+        "valor": 5000,
+        "espacoMemoria": 1288,
+        "tempoExecucao": 298
+    },
+    {
+        "id": 1347,
+        "valor": 5100,
+        "espacoMemoria": 1316,
+        "tempoExecucao": 303
+    },
+    {
+        "id": 1348,
+        "valor": 5200,
+        "espacoMemoria": 1344,
+        "tempoExecucao": 330
+    },
+    {
+        "id": 1349,
+        "valor": 5300,
+        "espacoMemoria": 1372,
+        "tempoExecucao": 315
+    },
+    {
+        "id": 1350,
+        "valor": 5400,
+        "espacoMemoria": 1400,
+        "tempoExecucao": 319
+    },
+    {
+        "id": 1351,
+        "valor": 5500,
+        "espacoMemoria": 1428,
+        "tempoExecucao": 326
+    },
+    {
+        "id": 1352,
+        "valor": 5600,
+        "espacoMemoria": 1456,
+        "tempoExecucao": 340
+    },
+    {
+        "id": 1353,
+        "valor": 5700,
+        "espacoMemoria": 1484,
+        "tempoExecucao": 341
+    },
+    {
+        "id": 1354,
+        "valor": 5800,
+        "espacoMemoria": 1512,
+        "tempoExecucao": 354
+    },
+    {
+        "id": 1355,
+        "valor": 5900,
+        "espacoMemoria": 1540,
+        "tempoExecucao": 363
+    },
+    {
+        "id": 1356,
+        "valor": 100,
+        "espacoMemoria": 1568,
+        "tempoExecucao": 7
+    },
+    {
+        "id": 1357,
+        "valor": 200,
+        "espacoMemoria": 1596,
+        "tempoExecucao": 11
+    },
+    {
+        "id": 1358,
+        "valor": 300,
+        "espacoMemoria": 1624,
+        "tempoExecucao": 22
+    },
+    {
+        "id": 1359,
+        "valor": 400,
+        "espacoMemoria": 1652,
+        "tempoExecucao": 23
+    },
+    {
+        "id": 1360,
+        "valor": 500,
+        "espacoMemoria": 1680,
+        "tempoExecucao": 29
+    },
+    {
+        "id": 1361,
+        "valor": 10,
+        "espacoMemoria": 1708,
+        "tempoExecucao": 3
+    },
+    {
+        "id": 1362,
+        "valor": 20,
+        "espacoMemoria": 1736,
+        "tempoExecucao": 5
+    },
+    {
+        "id": 1363,
+        "valor": 30,
+        "espacoMemoria": 1764,
+        "tempoExecucao": 4
+    },
+    {
+        "id": 1364,
+        "valor": 40,
+        "espacoMemoria": 1792,
+        "tempoExecucao": 4
+    },
+    {
+        "id": 1365,
+        "valor": 50,
+        "espacoMemoria": 1820,
+        "tempoExecucao": 9
+    },
+    {
+        "id": 1366,
+        "valor": 1000000,
+        "espacoMemoria": 1848,
+        "tempoExecucao": 66998
+    },
+    {
+        "id": 1367,
+        "valor": 2000000,
+        "espacoMemoria": 1876,
+        "tempoExecucao": 132693
+    },
+    {
+        "id": 1368,
+        "valor": 3000000,
+        "espacoMemoria": 1904,
+        "tempoExecucao": 198706
+    },
+    {
+        "id": 1369,
+        "valor": 4000000,
+        "espacoMemoria": 1932,
+        "tempoExecucao": 264489
+    },
+    {
+        "id": 1370,
+        "valor": 5000000,
+        "espacoMemoria": 1960,
+        "tempoExecucao": 332501
+    }
+]

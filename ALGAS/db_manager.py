@@ -1,3 +1,4 @@
+from export_data import export_to_csv, export_to_json
 from insert import insert_data, delete_data, insert_one
 from create import create_db, drop_table_db
 from select_data import select_data
@@ -32,3 +33,18 @@ class DatabaseManager:
 
     def drop(self):
         drop_table_db(cursor=self.connection.cursor())
+        
+    def export_csv(self, dados: list):
+        export_to_csv(dados)
+        
+    def export_json(self, dados: list):
+        data_json = []
+        for dado in dados:
+            json_value = {
+                "id": dado[0],
+                "valor": dado[1],
+                "espacoMemoria": dado[2],
+                "tempoExecucao": dado[3]
+            }
+            data_json.append(json_value)
+        export_to_json(data_json)
