@@ -4,10 +4,10 @@ INSERT_QUERY_LITE = "INSERT INTO dados (valor, espacoMemoria, tempoExecucao) VAL
 SELECT_QUERY_LITE = "SELECT id, valor, espacoMemoria, tempoExecucao from dados"
 DELETE_QUERY_LITE = "DELETE FROM dados"
 
-DB_HOST = "3.239.84.130"
+DB_HOST = "localhost"
 DB_PORT = "3306"
 DB_USER = "root"
-DB_PASSWORD = "root"
+DB_PASSWORD = "123mysql@"
 DATABASE = "ALGAS"
 
 CREATE_QUERY = "CREATE TABLE IF NOT EXISTS dados (id INT PRIMARY KEY AUTO_INCREMENT, valor INT, espacoMemoria INT, tempoExecucao INT)"

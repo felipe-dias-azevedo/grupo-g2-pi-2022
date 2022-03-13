@@ -5,11 +5,11 @@ from sys import getsizeof
 
 def get_data_ranges() -> tuple:
     return (
-        range(100000, 600000, 100000),
-        range(1000, 6000, 100), 
-        range(100, 600, 100), 
-        range(10, 60, 10), 
-        range(1000000, 6000000, 1000000)
+        range(100000, 6000000, 100000),
+        range(1000, 60000, 100), 
+        range(100, 6000, 100), 
+        range(10, 600, 10), 
+        range(1000000, 60000000, 1000000)
     )
 
 
