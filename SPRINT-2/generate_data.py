@@ -1,9 +1,10 @@
 from sys import getsizeof
-from random import randrange
+from random import randrange, choices
 from datetime import datetime
+from typing import Dict, List
 
 
-class Data:
+class Data(object):
     mensalidade: float
     estado: str
     municipio: str
@@ -30,40 +31,48 @@ class Data:
     tempo_execucao: int  # micro segundos
 
 
-def gen(count: int = 1) -> list[Data]:
-    values: list[Data] = []
+def gen(count: int = 1) -> List[Dict]:
+    values: list[dict] = []
     for i in range(count):
         values.append(gen_one())
     return values
 
 
-def gen_one() -> Data:
+def gen_one() -> dict:
+    # MOCK
+    estados = ["SP", "RJ", "MG"]
+    municipios = ["São Paulo", "Rio de Janeiro", "Belo Horizonte"]
+    cursos = ["Medicina", "Ciência da Computação", "Direito", "Sociologia"]
+
     inicio = datetime.now()
     d = Data()
     d.mensalidade = randrange(start=1_000, stop=10_000, step=500)
-    # TODO
-    d.estado = ""
-    # TODO
-    d.municipio = ""
-    # TODO
-    d.nome_curso = ""
-    d.quantidade_bolsas = randrange(start=0, stop=20)
+
+    cidade_estado = choices([0,1,2], [0.45, 0.31, 0.24])[0]
+    d.estado = estados[cidade_estado]
+    d.municipio = municipios[cidade_estado]
+    curso = choices([0,1,2,3], [0.35, 0.2, 0.3, 0.15])[0]
+    d.nome_curso = cursos[curso]
+
+    d.quantidade_bolsas = randrange(start=1, stop=20)
     d.nota_bolsa = randrange(start=500, stop=1_000, step=50)
-    d.sexo = randrange(1, 3)
-    d.raca = randrange(1, 4)
-    d.deficiente = True if randrange(start=1, stop=21) % 14 == 0 else False
+    d.sexo = choices([0,1], [0.48, 0.52])[0]
+    d.raca = choices([0,1,2,3], [0.43, 0.47, 0.09, 0.01])[0]
+    d.deficiente = gen_bool(0.95)
     d.idade = randrange(start=16, stop=50, step=2)
-    d.esgoto_inexistente = gen_bool()
-    d.energia_eletrica_inexistente = gen_bool()
-    d.agua_inexistente = gen_bool()
-    d.acesso_internet = gen_bool()
-    d.faz_exame_selecao = gen_bool()
-    d.especializada_deficientes = gen_bool()
-    d.ensino_tecnico = gen_bool()
-    d.espaco_memoria = sum([getsizeof(i) for i in d.__dict__.values()])
+    d.esgoto_inexistente = gen_bool(0.8)
+    d.energia_eletrica_inexistente = gen_bool(0.95)
+    d.agua_inexistente = gen_bool(0.9)
+    d.acesso_internet = gen_bool(0.33)
+    d.faz_exame_selecao = gen_bool(0.8)
+    d.especializada_deficientes = gen_bool(0.98)
+    d.ensino_tecnico = gen_bool(0.75)
+    d.espaco_memoria = sum([getsizeof(i) for i in vars(d).values()])
     d.tempo_execucao = (datetime.now() - inicio).microseconds
-    return d
+    return vars(d)
 
 
-def gen_bool():
-    return randrange(0, 2)
+def gen_bool(probability: float) -> bool:
+    prob = round(probability, 2)
+    val = choices([0,1], [prob, 1 - prob])[0]
+    return False if val == 0 else True
