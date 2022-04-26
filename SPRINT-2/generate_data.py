@@ -46,20 +46,20 @@ def gen_one() -> dict:
 
     inicio = datetime.now()
     d = Data()
-    d.mensalidade = randrange(start=1_000, stop=10_000, step=500)
+    d.mensalidade = randrange(start=1_000, stop=10_000)
 
-    cidade_estado = choices([0,1,2], [0.45, 0.31, 0.24])[0]
+    cidade_estado = choices([0, 1, 2], [0.45, 0.31, 0.24])[0]
     d.estado = estados[cidade_estado]
     d.municipio = municipios[cidade_estado]
-    curso = choices([0,1,2,3], [0.35, 0.2, 0.3, 0.15])[0]
+    curso = choices([0, 1, 2, 3], [0.35, 0.2, 0.3, 0.15])[0]
     d.nome_curso = cursos[curso]
 
     d.quantidade_bolsas = randrange(start=1, stop=20)
-    d.nota_bolsa = randrange(start=500, stop=1_000, step=50)
-    d.sexo = choices([0,1], [0.48, 0.52])[0]
-    d.raca = choices([0,1,2,3], [0.43, 0.47, 0.09, 0.01])[0]
+    d.nota_bolsa = randrange(start=500, stop=1_000)
+    d.sexo = choices([0, 1], [0.48, 0.52])[0]
+    d.raca = choices([0, 1, 2, 3], [0.43, 0.47, 0.09, 0.01])[0]
     d.deficiente = gen_bool(0.95)
-    d.idade = randrange(start=16, stop=50, step=2)
+    d.idade = randrange(start=16, stop=50)
     d.esgoto_inexistente = gen_bool(0.8)
     d.energia_eletrica_inexistente = gen_bool(0.95)
     d.agua_inexistente = gen_bool(0.9)
@@ -74,5 +74,5 @@ def gen_one() -> dict:
 
 def gen_bool(probability: float) -> bool:
     prob = round(probability, 2)
-    val = choices([0,1], [prob, 1 - prob])[0]
+    val = choices([0, 1], [prob, 1 - prob])[0]
     return False if val == 0 else True
