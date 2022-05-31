@@ -6,6 +6,15 @@ from pandas import DataFrame
 
 
 class Process:
+    def get_sentiment_of_value(self, df: DataFrame, word):
+        valor = df.loc[df['frequent'].apply(lambda freq: word in freq)]['sentiment'].mean()
+        if valor > 0:
+            return "Positivo"
+        elif valor == 0:
+            return "Neutro"
+        else:
+            return "Negativo"
+    
     def words_in_tweet(self, tweet: list):
         only_words_tweets = []
         for words in tweet:
@@ -53,6 +62,9 @@ class Process:
 
     def get_label_from_floatbool(self, label: float) -> str:
         return "Sim" if label >= 1 else "Não"
+    
+    def get_label_from_bool(self, value: bool) -> str:
+        return "Sim" if value else "Não"
 
 
 if __name__ == "__main__":
