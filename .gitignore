@@ -131,3 +131,5 @@ dmypy.json
 # ALGAS
 ALGAS/env/
 SPRINT-2/env/
+
+.DS_Store

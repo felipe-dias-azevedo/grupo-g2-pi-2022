@@ -1,8 +1,12 @@
+import re
 import unicodedata
 from datetime import date, datetime
 from difflib import SequenceMatcher
+import nltk
+from nltk.tokenize import RegexpTokenizer
+from LeIA import leia
 
-from pandas import DataFrame
+from pandas import DataFrame, Series
 
 
 def round_range(value, start: int, stop: int, step: int) -> int:
@@ -32,6 +36,17 @@ def words_in_tweet(tweet: list):
             onlywords.append(word[0])
         only_words_tweets.append(onlywords)
     return only_words_tweets
+
+
+def freq_tweet_day(tweets: Series):
+    frequency = []
+    for tweet in tweets:
+        count = tweet[1]
+        for t in tweets:
+            if t[0] == tweet[0]:
+                count += t[1]
+        frequency.append([tweet[0], count])
+    return ', '.join(map(lambda f: str(f[0]), frequency[:3]))
 
 
 def freq_tweet(tweets: DataFrame):
@@ -78,6 +93,35 @@ def get_label_from_floatbool(label: float) -> str:
 
 def get_label_from_bool(value: bool) -> str:
     return "Sim" if value else "Não"
+
+
+def analyze_tweet_sentiment(text: str):
+    sentiment_analyzer = leia.SentimentIntensityAnalyzer()
+    result = sentiment_analyzer.polarity_scores(text)
+    return result["compound"]
+
+
+def analyze_tweet_frequency(text: str):
+    text_nolinks = re.sub(r'http\S+', '', text)
+    regexp = RegexpTokenizer(r'\w+')
+    onlytext = ' '.join(regexp.tokenize(text_nolinks))
+    words = nltk.word_tokenize(onlytext)
+    stopwords = nltk.corpus.stopwords.words("portuguese")
+    wordslower = [w.lower() for w in words]
+    frequency = nltk.FreqDist([word for word in wordslower if
+                          word not in stopwords and not is_profane(word)])
+    return frequency.most_common(10)
+
+
+def analyze_tweet_verified(user_id: str, users: list[dict]) -> bool:
+    userfound = next((u for u in users if u["id"] == user_id), {"verified": False})
+    return userfound["verified"]
+
+
+def is_profane(text: str) -> bool:
+    with open("tweets/profanity_ptbr.txt") as f:
+        profane_words = tuple(map(lambda x: x.lower().replace('\n', ''), f.readlines()))
+    return text.startswith(profane_words)
 
 
 if __name__ == "__main__":

@@ -15,3 +15,6 @@ cada tópico com no mínimo 2 subdivisões
 ##### Nota da bolsa por Estado e Gênero e qualidade escola 
 * Histograma com nota da bolsa por estado
 * Histograma com nota das bolsas de cada estado e qualidade da escola (!esgoto or !energia or !agua)
+
+### Gráfico Bonus
+* gráfico de progressão linear com mensalidade e nota da bolsa 
